@@ -1,1 +1,28 @@
+DO FORENSIC QUESTIONS FIRST!!
 
+UPDATE SYSTEM
+sudo apt update && sudo apt upgrade -y #one line
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+
+UPDATE AND CONFIGURE FIREFOX SETTINGS
+firefox --version
+sudo apt install firefox
+Open Firefox and go to Privacy and Security
+Standard protection, Turn off "Ask to save logins and passwords"
+Make sure Dangerous and deceptive content is blocked, addons blocked, popups blocked, and delete cookies
+Firefox does not autofill credit card info 
+
+REMOVE UNAUTHORIZED USERS
+sudo etc passwd
+sudo userdel -r <username>
+
+REMOVE UNAUTHORIZED ADMIN
+list groups
+cat /etc/group
+
+TURN ON FIREWALL
+sudo ufw enable
+sudo ufw reload
+sudo ufw status verbose
